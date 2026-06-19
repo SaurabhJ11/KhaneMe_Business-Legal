@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KhaneMe Business Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --stone:#EDEAE4;
+    --surface:#FBF9F5;
+    --ink:#26221E;
+    --ink-soft:#5C564E;
+    --saffron:#D88A1F;
+    --maroon:#7A2A2A;
+    --steel:#8A8D8E;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--stone);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.55;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:64px 24px 96px;}
+  header{position:relative;padding-bottom:40px;}
+  .lid{
+    position:absolute;top:-30px;right:-10px;
+    width:140px;height:140px;border-radius:50%;
+    border:10px solid var(--steel);opacity:0.18;
+    z-index:0;
+  }
+  h1{
+    font-family:'Bricolage Grotesque',serif;
+    font-weight:700;
+    font-size:clamp(2.2rem,5vw,3.1rem);
+    margin:0 0 6px;
+    position:relative;z-index:1;
+  }
+  .tagline{
+    color:var(--maroon);
+    font-weight:600;
+    font-size:1.05rem;
+    margin:0;
+    position:relative;z-index:1;
+  }
+  .intro{
+    margin-top:28px;
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    max-width:54ch;
+  }
+  h2.section-label{
+    font-family:'Bricolage Grotesque',serif;
+    font-weight:700;
+    font-size:1.4rem;
+    margin:56px 0 4px;
+  }
+  .section-sub{color:var(--ink-soft);margin:0 0 24px;font-size:0.95rem;}
+  .thali{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+  @media(max-width:560px){.thali{grid-template-columns:1fr;}}
+  .compartment{
+    background:var(--surface);
+    border:1px solid rgba(122,42,42,0.12);
+    border-radius:18px;
+    padding:20px 22px;
+  }
+  .compartment h3{
+    margin:0 0 8px;
+    font-size:1rem;
+    font-weight:600;
+  }
+  .compartment p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:0.93rem;
+  }
+  .contact{
+    margin-top:56px;
+    background:var(--maroon);
+    color:#FBF1E7;
+    border-radius:22px;
+    padding:32px 30px;
+  }
+  .contact h2{
+    font-family:'Bricolage Grotesque',serif;
+    margin:0 0 8px;
+    font-size:1.5rem;
+  }
+  .contact p{margin:0 0 20px;color:#EBD9C8;font-size:0.95rem;}
+  .contact a{
+    display:inline-block;
+    background:var(--saffron);
+    color:#26221E;
+    font-weight:600;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:999px;
+    font-size:0.95rem;
+  }
+  .contact a:focus-visible, .compartment:focus-visible{
+    outline:3px solid #FBF1E7;
+    outline-offset:2px;
+  }
+  footer{
+    margin-top:48px;
+    color:var(--ink-soft);
+    font-size:0.82rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="lid" aria-hidden="true"></div>
+      <h1>KhaneMe Business Support</h1>
+      <p class="tagline">Run your mess, simplified.</p>
+      <p class="intro">This page covers common questions about the KhaneMe Business app, for mess and tiffin service owners. If you can't find what you need below, write to us directly.</p>
+    </header>
+
+    <h2 class="section-label">Common questions</h2>
+    <p class="section-sub">A few things owners usually ask about first.</p>
+    <div class="thali">
+      <div class="compartment">
+        <h3>I can't log in or sign up</h3>
+        <p>Make sure you're on the latest version of the app from the App Store, then try again. If it persists, email us with the phone number or email tied to your business account.</p>
+      </div>
+      <div class="compartment">
+        <h3>My mess timings or menu won't save</h3>
+        <p>Double-check the timing entries don't overlap, then try saving again. If it still fails, send us a screenshot of what you entered.</p>
+      </div>
+      <div class="compartment">
+        <h3>My menu images aren't uploading</h3>
+        <p>Check your internet connection and that the image isn't too large. If the upload keeps failing, email us the image and your account details.</p>
+      </div>
+      <div class="compartment">
+        <h3>The app crashed or won't load</h3>
+        <p>Force-close and reopen the app, and check the App Store for an update. If it keeps happening, let us know your device model and iOS version.</p>
+      </div>
+      <div class="compartment">
+        <h3>I want to delete my account or data</h3>
+        <p>Email us from your registered address asking for account deletion. We'll confirm and remove your business account data.</p>
+      </div>
+      <div class="compartment">
+        <h3>Something else</h3>
+        <p>Not covered here? Just write in — describe what you were doing and what happened.</p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>Still need help?</h2>
+      <p>We typically reply within 1–2 business days.</p>
+      <a href="mailto:support@khaneme.com">support@khaneme.com</a>
+    </div>
+
+    <footer>© 2026 Joshi Saurabh Vinay</footer>
+  </div>
+</body>
+</html>
